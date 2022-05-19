@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 html{
     height: 100%;
     display: grid;
@@ -147,9 +151,10 @@ body{
     background-color: gray;
 }
 
-@media (max-width:19rem){
+@media (max-width:25rem){
     .calculator{
         width: 100vw;
+        /*justify-content: center;*/
     }
 }
 
