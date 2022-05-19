@@ -16,10 +16,11 @@ html{
 
 body{
     background-image: linear-gradient(to right top,rgb(29, 29, 29) 50%, grey);
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
+     user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -47,12 +48,12 @@ body{
 .calculator{
     border-radius: 15px;
     position: relative;
-    width: 17rem;
-    height: 32rem;
+    width: 25rem;
+    height: 38rem;
     padding: 3px;
     display: grid;
     background-color: #fff;
-    grid-template-columns: repeat(4, 4rem);
+    grid-template-columns: repeat(4, 5.5rem);
     justify-content: space-between;
     justify-items: center;
     align-content: end;
@@ -84,18 +85,16 @@ body{
     border-radius: 50%;
     outline: 0;
     border: 0;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
     margin-block: 3px;
     cursor: pointer;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-family: 'Yas', sans-serif, serif;
     background-color: rgb(242, 242, 242);
     transition: .2s;
     color: rgba(0, 0, 0, 0.7);
     position: relative;
-    display: grid;
-    place-items: center;
 }
 
 .clear-all{
@@ -139,22 +138,22 @@ body{
     width: 1.8rem;
     height: 1.8rem;
     margin: 0;
-    pointer-events: none;
+    background-color: transparent;
     color: rgba(0, 172, 0, .25);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     display: grid;
     place-items: center;
+}
+
+.delete:disabled{
     background-color: transparent;
 }
 
-.delete:active{
-    background-color: gray;
-}
-
-@media (max-width:40rem){
+@media (max-width:28rem){
     .calculator{
         width: 100vw;
-        /*justify-content: center;*/
+        height: 100vh;
+        justify-content: center;
     }
 }
 
@@ -225,4 +224,3 @@ body{
 .result-large span{
     color: rgb(0, 172, 0);
 }
-
