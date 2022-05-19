@@ -92,7 +92,7 @@ class Calculator{
 
     display(){
         this.previousOperandElement.classList.remove('move')
-        if (this.rawInput.length > 17){
+        if (this.rawInput.length > 16){
             this.currentOperandElement.style.fontSize = '1.5rem'
         } else{
             this.currentOperandElement.style.fontSize = '2rem'

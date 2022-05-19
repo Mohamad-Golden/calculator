@@ -49,17 +49,18 @@ body{
     border-radius: 15px;
     position: relative;
     width: 25rem;
-    height: 38rem;
+    height: 37rem;
     padding: 3px;
     display: grid;
     background-color: #fff;
     grid-template-columns: repeat(4, 5.5rem);
-    justify-content: space-between;
+    justify-content: center;
     justify-items: center;
-    /* align-content: auto; */
+    align-content: start;
 }
 
 .result{
+    padding-top: 1rem;
     justify-self: stretch;
     grid-column: 1 / -1;
     height: 7rem;
