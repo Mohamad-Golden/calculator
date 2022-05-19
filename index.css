@@ -95,7 +95,7 @@ body{
     font-size: 1.8rem;
     font-family: 'Yas', sans-serif, serif;
     background-color: rgb(242, 242, 242);
-    transition: .2s;
+    transition: .1s;
     color: rgba(0, 0, 0, 0.7);
     position: relative;
 }
