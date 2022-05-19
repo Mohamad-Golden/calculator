@@ -151,7 +151,7 @@ body{
     background-color: gray;
 }
 
-@media (max-width:25rem){
+@media (max-width:28rem){
     .calculator{
         width: 100vw;
         /*justify-content: center;*/
