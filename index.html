@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <div class="calculator">
+    <div class="result">
+      <div class="result-large"></div>
+      <div class="result-small"><span style="display: block;"></span></div>
+    </div>
+    <div class="tools">
+      <!-- <button class="history"></button> -->
+      <button class="button delete" disabled><i class="far fa-times-circle"></i></button>
+    </div>
+    <button class="button clear-all">C<span class="info">پاک</span></button>
+    <button class="button paranthesis">()<span class="info">پرانتز</span></button>
+    <button class="button operator percent" data-value="%" data-symbol="٪">%<span class="info">درصد</span></button>
+    <button class="button operator" data-value='/' data-symbol="÷">÷<span class="info">تقسیم</span></button>
+    <button class="button" data-value="7">۷</button>
+    <button class="button" data-value="8">۸</button>
+    <button class="button" data-value="9">۹</button>
+    <button class="button operator" data-value='*' data-symbol="×">×<span class="info">ضرب</span></button>
+    <button class="button" data-value="4">۴</button>
+    <button class="button" data-value="5">۵</button>
+    <button class="button" data-value="6">۶</button>
+    <button class="button operator negative" data-value='-' data-symbol="-">－<span class="info">تفریق</span></button>
+    <button class="button" data-value="1">۱</button>
+    <button class="button" data-value="2">۲</button>
+    <button class="button" data-value="3">۳</button>
+    <button class="button operator" data-value='+' data-symbol="+" >+<span class="info">جمع</span></button>
+    <button class="button">+/-</button>
+    <button class="button" data-value="0">۰</button>
+    <button class="button" data-value=".">/</button>
+    <button class="button equal">=<span class="info">مساوی</span></button>
+  </div>
+</body>
+
+</html>
