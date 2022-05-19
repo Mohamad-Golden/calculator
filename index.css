@@ -56,8 +56,7 @@ body{
     grid-template-columns: repeat(4, 5.5rem);
     justify-content: space-between;
     justify-items: center;
-    align-content: end;
-    background-color: pink;
+    /* align-content: auto; */
 }
 
 .result{
