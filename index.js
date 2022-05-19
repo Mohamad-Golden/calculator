@@ -92,10 +92,10 @@ class Calculator{
 
     display(){
         this.previousOperandElement.classList.remove('move')
-        if (this.rawInput.length > 12){
-            this.currentOperandElement.style.fontSize = '1.4rem'
+        if (this.rawInput.length > 17){
+            this.currentOperandElement.style.fontSize = '1.5rem'
         } else{
-            this.currentOperandElement.style.fontSize = '1.8rem'
+            this.currentOperandElement.style.fontSize = '2rem'
         }
         this.currentOperandElement.innerHTML = this.wrapTag(this.styledOutput, '-+÷×٪', 'span')
         if (this.result === '') {
