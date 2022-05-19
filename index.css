@@ -56,7 +56,7 @@ body{
     grid-template-columns: repeat(4, 5.5rem);
     justify-content: center;
     justify-items: center;
-    align-content: start;
+    align-content: end;
 }
 
 .result{
