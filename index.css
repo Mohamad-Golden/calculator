@@ -12,6 +12,10 @@ html{
 
 body{
     background-image: linear-gradient(to right top,rgb(29, 29, 29) 50%, grey);
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 ::-webkit-scrollbar {
@@ -86,6 +90,8 @@ body{
     transition: .2s;
     color: rgba(0, 0, 0, 0.7);
     position: relative;
+    display: grid;
+    place-items: center;
 }
 
 .clear-all{
@@ -129,15 +135,16 @@ body{
     width: 1.8rem;
     height: 1.8rem;
     margin: 0;
-    background-color: transparent;
+    pointer-events: none;
     color: rgba(0, 172, 0, .25);
     font-size: 1.1rem;
     display: grid;
     place-items: center;
+    background-color: transparent;
 }
 
-.delete:disabled{
-    background-color: transparent;
+.delete:active{
+    background-color: gray;
 }
 
 @media (max-width:19rem){
@@ -213,3 +220,4 @@ body{
 .result-large span{
     color: rgb(0, 172, 0);
 }
+

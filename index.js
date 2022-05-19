@@ -105,11 +105,13 @@ class Calculator{
         }
         if (this.rawInput !== ''){
             this.deleteButton.style.color = 'rgb(0, 172, 0)'
-            this.deleteButton.removeAttribute('disabled')
+            // this.deleteButton.removeAttribute('disabled')
+            this.deleteButton.style.pointerEvents = 'auto'
         } else{
             this.deleteButton.style.color = 'rgba(0, 172, 0, .25)'
             clearInterval(timeIntervalId)
-            this.deleteButton.setAttribute('disabled', 'true')
+            // this.deleteButton.setAttribute('disabled', 'true')
+            this.deleteButton.style.pointerEvents = 'none'
         }
     }
 
