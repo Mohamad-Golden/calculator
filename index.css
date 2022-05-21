@@ -190,9 +190,9 @@ body{
         transform: none;
     }
     50%{
-        font-size: 1.8rem;
+        font-size: 2rem;
         color: rgb(0, 172, 0);
-        transform: translateY(-4.8rem);
+        transform: translateY(-3.7rem);
     }
 }
 
